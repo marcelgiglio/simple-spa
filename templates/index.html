@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Simple SPA</title>
+		<link rel="shortcut icon" href="static/images/generic logo.ico"/>
+		<link rel="stylesheet" href="static/style.css">
+	</head>
+	<body>
+		<header>
+			<nav class="top_nav">
+			    <ul>
+					<a href="#"><img id="nav_logo" src="static/images/generic logo.png"></a>
+					<li id="li_top_0" class="li_top" data-screen-id="screen_0"><span>Aba 0</span></li>
+					<li id="li_top_1" class="li_top" data-screen-id="screen_1"><span>Aba 1</span></li>
+				</ul>
+				<a href="#" id="logout">Sair</a>
+			</nav>
+		</header>
+		<div id="screen_0" class="screen">
+			<div class="left_menu_wrapper">
+				<nav class="left_nav">
+					<ul>
+						<li class="li_left" data-section-id="section_0_0"><span>Aba 0_0</span></li>
+						<li class="li_left" data-section-id="section_0_1"><span>Aba 0_1</span></li>
+						<li class="li_left" data-section-id="section_0_2"><span>Aba 0_2</span></li>
+						<li class="li_left" data-section-id="section_0_3"><span>Aba 0_3</span></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="section_wrapper">
+				<h1>Tela 0</h1>
+				<section id="section_0_0" class="not_loaded" data-section-path="static/screen_0/section_0"><div class="loader">Carregando...</div></section>
+				<section id="section_0_1" class="not_loaded" data-section-path="static/screen_0/section_1"><div class="loader">Carregando...</div></section>
+				<section id="section_0_2" class="not_loaded" data-section-path="static/screen_0/section_2"><div class="loader">Carregando...</div></section>
+				<section id="section_0_3" class="not_loaded" data-section-path="static/screen_0/section_3"><div class="loader">Carregando...</div></section>
+			</div>
+		</div>
+		<div id="screen_1" class="screen">
+			<div class="left_menu_wrapper">
+				<nav class="left_nav">
+					<ul>
+						<li class="li_left" data-section-id="section_1_0"><span>Aba 1_0</span></li>
+						<li class="li_left" data-section-id="section_1_1"><span>Aba 1_1</span></li>
+						<li class="li_left" data-section-id="section_1_2"><span>Aba 1_2</span></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="section_wrapper">
+				<h1>Tela 1</h1>
+				<section id="section_1_0" class="not_loaded" data-section-path="static/screen_1/section_0"><div class="loader">Carregando...</div></section>
+				<section id="section_1_1" class="not_loaded" data-section-path="static/screen_1/section_1"><div class="loader">Carregando...</div></section>
+				<section id="section_1_2" class="not_loaded" data-section-path="static/screen_1/section_2"><div class="loader">Carregando...</div></section>
+			</div>
+		</div>
+		<script src="static/script.js"></script>
+	</body>
+</html>
